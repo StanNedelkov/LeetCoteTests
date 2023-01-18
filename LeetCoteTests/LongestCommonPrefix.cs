@@ -10,9 +10,10 @@ namespace LeetCoteTests
             if (strs.Any(x => string.IsNullOrEmpty(x))) return "";
 
             string reference= strs[0]!;
-            int small = strs.Min(x => x.Length);
-            StringBuilder stringBuilder= new StringBuilder();
 
+            int small = strs.Min(x => x.Length);
+
+            StringBuilder stringBuilder= new StringBuilder();
 
             bool isSame = true;
 
@@ -29,13 +30,9 @@ namespace LeetCoteTests
                         break; 
                     }
                 }
-
                 if (!isSame) break;
                 stringBuilder.Append(reference[i].ToString());
             }
-
-
-
             return stringBuilder.ToString().TrimEnd();
         }
     }

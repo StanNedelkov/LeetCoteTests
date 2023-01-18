@@ -50,6 +50,7 @@ static int NumberOfWeakCharacters(int[][] properties)
 */
 
 using LeetCoteTests;
-string[] array = new[] { "ab", "a" };
-var solution = new LongestCommonPrefix().LongestCommonPrefixes(array);
-Console.WriteLine(solution);
+
+var arr = new int[] { 1, -2, 3, -2 };
+
+var solution = new MaxSumCircularSubArray().MaxSubarraySumCircular(arr);
