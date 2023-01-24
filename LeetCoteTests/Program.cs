@@ -51,6 +51,7 @@ static int NumberOfWeakCharacters(int[][] properties)
 
 using LeetCoteTests;
 
-var arr = new int[] { 1, -2, 3, -2 };
+string input = "MCMXCIV";
 
-var solution = new MaxSumCircularSubArray().MaxSubarraySumCircular(arr);
+var solution = new RomanToInteger_13().RomanToInt(input);
+Console.WriteLine(solution);
